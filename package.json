@@ -2,5 +2,9 @@
   "name": "P402-WebPack-Start-Study",
   "version": "0.1.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3"
+  }
 }
