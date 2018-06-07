@@ -9,8 +9,7 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.css$/,
+            {test: /\.css$/,
                 use:[
                         {loader: 'style-loader'},
                         {loader: 'css-loader',
@@ -25,15 +24,15 @@ module.exports = {
                                 ],
                                 sourceMap: true
                             }
-                        },
-                        {loader: 'sass-loader',
-                            options: {
-                                includePaths: [
-                                    helpers.root ('src', 'styles', 'global'),
-                                ],
-                                sourceMap: true
-                            }
                         }
+                    //     ,{loader: 'sass-loader',
+                    //         options: {
+                    //             includePaths: [
+                    //                 helpers.root ('src', 'styles', 'global'),
+                    //             ],
+                    //             sourceMap: true
+                    //         }
+                    //     }
                     ]
 
             }
