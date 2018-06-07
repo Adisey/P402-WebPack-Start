@@ -1,0 +1,109 @@
+:  compare kdiff3 -> !&
+    "C:\Program Files\KDiff3\kdiff3.exe" !&
+g:  go to
+{
+d:  Docs
+    cd "D:\Work\WordPress\Docs"
+:  D:\Users\Adisey\Videos
+    cd D:\Users\Adisey\Videos\
+p:  D:\Users\Adisey\Music\iTunes\iTunes Media\Podcasts\
+    cd D:\Users\Adisey\Music\iTunes\iTunes Media\Podcasts\
+:  D:\Work\JS
+    cd D:\Work\JS\
+l:  Roaming\npm-cache\_logs\
+    cd D:\Users\Adisey\AppData\Roaming\npm-cache\_logs\
+z:  LoviZvezu
+    cd "D:\Work\WordPress\Bitnami\wordpress-4.4-0\apps\wordpress\htdocs\wp-content\themes\LoviZvezdu"
+}
+i:  git
+{
+s:  git status (Статус)
+    git status
+i:  Git init (Init directory)
+    @echo# Папка для временных файлов >  .gitignore
+    @echo temp         >> .gitignore
+    @echo .idea        >> .gitignore
+    @echo node_modules >> .gitignore
+    git init
+    pause
+    far -e .gitignore
+a:  git add !&
+    git add !?вставьте имя файла ("." - все файлы)?(!&)!
+    git status
+b:  git branch -v (состояние бренчей/версий)
+    git branch -v
+m:  git checkout master/other (переход на бранчи/версии)
+    git checkout !?Введите бранч на который перейти?master!
+c:  git commit -m "Messege" (Подтвердить изменения)
+    git commit -m "!?Введите текст для Commit?Commit changes!"
+r:  git remote -v (посмотреть к какому репозиторию подключён)
+    git remote -v
+p:  git push (Вытолкнуть/отправить в репозиторий)
+    git push
+l:  git pull (Выянуть/получить из репозиторий)
+    git pull
+}
+b:  babel
+{
+b:  npm run build (перевести код из ES6 в ES5)
+    npm run build
+    @echo описание посмотрел тут https://youtu.be/1ygZZJWvmYQ
+w:  npm run watch (перевести код из ES6 в ES5 Автоматически)
+    npm run watch
+    @echo описание посмотрел тут https://youtu.be/1ygZZJWvmYQ
+i:  Install Babel (npm install babel-cli babel-core babel-preset-es2015 --save-dev)
+    npm install babel-cli babel-core babel-preset-es2015 --save-dev
+}
+n:  npm
+{
+i:  Создание package.json (npm init -y)
+    npm init -y
+}
+y:  Yarn
+{
+i:  Создание package.json (yarn init -y)
+    yarn init -y
+    pause
+    far -e package.json
+u:  Обновление зависимостей указвнных в package.json (yarn install)
+    yarn install
+l:  Список зависимостей в проекте (yarn list --depth=9 >relation.txt)
+    yarn list !?"пусто"-Все уровни или "--depth=9"- с уровнем вложенностей "9"?--depth=9! >!?Для сохранения в файл?relation.txt!
+    pause
+    far -e relation.txt
+d:  Удаление комонента (yarn remove )
+    yarn remove !?Укажите пакет?help!
+    pause
+    far -e package.json
+}
+w:  webpack
+{
+i:  Установить (yarn add webpack -D)
+    yarn add webpack -D
+    pause
+    far -e package.json
+p:  Установить Plugin (yarn add html-webpack-plugin -D)
+    yarn add html-webpack-plugin -D
+    pause
+    far -e package.json
+s:  Запустить сборку (yarn run start)
+    @echo Надеюсь в package.json добвленв строка start ;-)
+    @echo  "scripts": {
+    @echo    "start": "webpack"
+    @echo  },
+    yarn run start
+b:  Запустить сборку (yarn run webpack -p)
+    @echo Надеюсь в package.json добвленв строка build ;-)
+    @echo  "scripts": {
+    @echo    "build": "webpack -p"
+    @echo  },
+    yarn run webpack -p
+s:  Запустить сборку (yarn run webpack --watch)
+    @echo Надеюсь в package.json добвленв строка watch ;-)
+    @echo  "scripts": {
+    @echo    "watch": "webpack --watch"
+    @echo  },
+    yarn run webpack --watch
+}
+L:  Lisenc PHPStorm
+    Far -e "D:\Downloads\PhpStorm\Read.My"
