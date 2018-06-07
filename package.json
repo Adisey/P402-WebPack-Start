@@ -8,8 +8,10 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
+    "autoprefixer": "^8.6.1",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
+    "postcss-loader": "^2.1.5",
     "webpack": "^4.11.1",
     "webpack-cli": "^3.0.3"
   }
