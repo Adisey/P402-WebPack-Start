@@ -9,4 +9,4 @@
 
 1. "Вытрести из дерева сухие листья" - https://webpack.js.org/guides/tree-shaking/
 2. Подключить PostCSS - https://webpack.js.org/loaders/postcss-loader/
-3.
+!! В работе 3. Настройка Autoprefixer под Webpack - https://blog.zverit.com/frontend/2017/09/15/autoprefixer-webpack-config/
