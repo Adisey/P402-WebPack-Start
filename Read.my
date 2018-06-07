@@ -1,4 +1,12 @@
 Изучаем по шагам WebPack.
 
-Делаем  - https://webpack.js.org/guides/getting-started/
-Подсматриваем - https://proglib.io/p/webpack-in-15/
+1. https://webpack.js.org/guides/getting-started/
+2. https://proglib.io/p/webpack-in-15/
+
+
+
+Ещё надо:
+
+1. "Вытрести из дерева сухие листья" - https://webpack.js.org/guides/tree-shaking/
+
+2. Подключить PostCSS - https://webpack.js.org/loaders/postcss-loader/
