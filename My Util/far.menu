@@ -71,6 +71,10 @@ l:  Список зависимостей в проекте (yarn list --depth=9 >relation.txt)
     yarn list !?"пусто"-Все уровни или "--depth=9"- с уровнем вложенностей "9"?--depth=9! >!?Для сохранения в файл?relation.txt!
     pause
     far -e relation.txt
+a:  Добавить комонент (yarn add express )
+    yarn add !?Укажите пакет для уствновки?express! !?"--dev" только для режима разработки?--dev!
+    pause
+    far -e package.json
 d:  Удаление комонента (yarn remove )
     yarn remove !?Укажите пакет?help!
     pause
